@@ -1,4 +1,5 @@
 module IndexHelper
+  ActionView::Helper.send :include, IndexHelper
   class IndexBuilder
     attr_reader :columns, :records, :model
     
