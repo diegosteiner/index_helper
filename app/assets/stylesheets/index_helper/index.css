@@ -1,8 +1,126 @@
-/*
-*= require index_helper.css.scss
-*/
-
+@charset "UTF-8";
+/* line 3, /home/digi/workspaces/Rails/pfadismn.ch/branches/rails3/app/assets/stylesheets/forms/index_helper.css.scss */
 .index-container {
-    font-size: 0.85em;
-    background-color: red;
+  font-size: 0.85em;
 }
+/* line 6, /home/digi/workspaces/Rails/pfadismn.ch/branches/rails3/app/assets/stylesheets/forms/index_helper.css.scss */
+.index-container .index-navigation-bottom, .index-container .index-navigation {
+  background-image: linear-gradient(bottom, #333333 0%, #757575 100%);
+  background-image: -moz-linear-gradient(bottom, #333333 0%, #757575 100%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #333333), color-stop(1, #757575));
+  background-image: -webkit-linear-gradient(bottom, #333333 0%, #757575 100%);
+  padding: 10px 15px;
+  min-height: 25px;
+  clear: both;
+}
+/* line 15, /home/digi/workspaces/Rails/pfadismn.ch/branches/rails3/app/assets/stylesheets/forms/index_helper.css.scss */
+.index-container .index-navigation-bottom a, .index-container .index-navigation a {
+  background-image: linear-gradient(top, #eeeeee 0%, #bbbbbb 100%);
+  background-image: -moz-linear-gradient(top, #eeeeee 0%, #bbbbbb 100%);
+  background-image: -webkit-linear-gradient(top, #eeeeee 0%, #bbbbbb 100%);
+  border-radius: 5px;
+  border: 1px solid #333;
+  padding: 5px;
+  margin-top: 10px;
+}
+/* line 25, /home/digi/workspaces/Rails/pfadismn.ch/branches/rails3/app/assets/stylesheets/forms/index_helper.css.scss */
+.index-container .index-navigation-bottom .index-buttons, .index-container .index-navigation .index-buttons {
+  float: left;
+  margin-top: 7px;
+}
+/* line 30, /home/digi/workspaces/Rails/pfadismn.ch/branches/rails3/app/assets/stylesheets/forms/index_helper.css.scss */
+.index-container .index-navigation-bottom .index-pager, .index-container .index-navigation .index-pager {
+  float: right;
+  font-size: 0.9em;
+}
+/* line 34, /home/digi/workspaces/Rails/pfadismn.ch/branches/rails3/app/assets/stylesheets/forms/index_helper.css.scss */
+.index-container .index-navigation-bottom .index-pager span a, .index-container .index-navigation-bottom .index-pager span.current, .index-container .index-navigation .index-pager span a, .index-container .index-navigation .index-pager span.current {
+  border-radius: 0 0 3px 3px;
+  background-image: -webkit-linear-gradient(bottom, #999999 0%, #777777 100%);
+  padding: 5px 8px 5px 8px;
+  margin: 0px 4px;
+}
+/* line 40, /home/digi/workspaces/Rails/pfadismn.ch/branches/rails3/app/assets/stylesheets/forms/index_helper.css.scss */
+.index-container .index-navigation-bottom .index-pager span a:hover, .index-container .index-navigation-bottom .index-pager span.current:hover, .index-container .index-navigation .index-pager span a:hover, .index-container .index-navigation .index-pager span.current:hover {
+  background-image: -webkit-linear-gradient(bottom, #bbbbbb 0%, #999999 100%);
+  color: black;
+}
+/* line 46, /home/digi/workspaces/Rails/pfadismn.ch/branches/rails3/app/assets/stylesheets/forms/index_helper.css.scss */
+.index-container .index-navigation-bottom .index-pager span.current, .index-container .index-navigation .index-pager span.current {
+  background-image: -webkit-linear-gradient(top, white 0%, #eeeeee 100%);
+  box-shadow: 2px 2px 4px #111;
+}
+/* line 51, /home/digi/workspaces/Rails/pfadismn.ch/branches/rails3/app/assets/stylesheets/forms/index_helper.css.scss */
+.index-container .index-navigation-bottom .index-pager a, .index-container .index-navigation .index-pager a {
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+/* line 61, /home/digi/workspaces/Rails/pfadismn.ch/branches/rails3/app/assets/stylesheets/forms/index_helper.css.scss */
+.index-container .index-navigation {
+  border-radius: 10px 10px 0 0;
+  margin: 0 10px;
+  padding: 10px 15px 0 15px;
+}
+/* line 66, /home/digi/workspaces/Rails/pfadismn.ch/branches/rails3/app/assets/stylesheets/forms/index_helper.css.scss */
+.index-container .index-navigation h2 {
+  background-image: -webkit-linear-gradient(top, #eeeeee 0%, #dddddd 100%);
+  text-align: center;
+  border: none;
+  border-radius: 3px 3px 0 0;
+  padding: 5px 5px 10px 5px;
+  margin: 0;
+  box-shadow: 2px 2px 4px #111;
+  background-color: #DDD;
+  width: 150px;
+  font-size: 13px;
+}
+/* line 80, /home/digi/workspaces/Rails/pfadismn.ch/branches/rails3/app/assets/stylesheets/forms/index_helper.css.scss */
+.index-container .index-table {
+  margin: 0 10px;
+  position: relative;
+}
+/* line 84, /home/digi/workspaces/Rails/pfadismn.ch/branches/rails3/app/assets/stylesheets/forms/index_helper.css.scss */
+.index-container .index-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+/* line 88, /home/digi/workspaces/Rails/pfadismn.ch/branches/rails3/app/assets/stylesheets/forms/index_helper.css.scss */
+.index-container .index-table table td, .index-container .index-table table th {
+  margin: 0;
+  padding: 8px;
+  border: none;
+}
+/* line 94, /home/digi/workspaces/Rails/pfadismn.ch/branches/rails3/app/assets/stylesheets/forms/index_helper.css.scss */
+.index-container .index-table table tbody td {
+  border-bottom: 1px solid #EEE;
+}
+/* line 98, /home/digi/workspaces/Rails/pfadismn.ch/branches/rails3/app/assets/stylesheets/forms/index_helper.css.scss */
+.index-container .index-table table tbody:last-child td {
+  border-bottom: none;
+}
+/* line 102, /home/digi/workspaces/Rails/pfadismn.ch/branches/rails3/app/assets/stylesheets/forms/index_helper.css.scss */
+.index-container .index-table table tbody tr:hover td {
+  background: #EEE;
+}
+/* line 107, /home/digi/workspaces/Rails/pfadismn.ch/branches/rails3/app/assets/stylesheets/forms/index_helper.css.scss */
+.index-container .index-table table thead tr th {
+  padding: 8px;
+  background-image: -webkit-linear-gradient(top, #dddddd 0%, #cccccc 100%);
+  text-align: left;
+}
+/* line 113, /home/digi/workspaces/Rails/pfadismn.ch/branches/rails3/app/assets/stylesheets/forms/index_helper.css.scss */
+.index-container .index-table table thead tr th.sorting_column.asc span:after {
+  content: " ⇧";
+}
+/* line 117, /home/digi/workspaces/Rails/pfadismn.ch/branches/rails3/app/assets/stylesheets/forms/index_helper.css.scss */
+.index-container .index-table table thead tr th.sorting_column.desc span:after {
+  content: " ⇩";
+}
+/* line 125, /home/digi/workspaces/Rails/pfadismn.ch/branches/rails3/app/assets/stylesheets/forms/index_helper.css.scss */
+.index-container .index-navigation-bottom {
+  border-radius: 0 0 10px 10px;
+  margin: 0 10px;
+  padding: 5px 15px 10px 15px;
+}
+
