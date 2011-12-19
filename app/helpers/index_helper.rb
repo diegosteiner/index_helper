@@ -62,6 +62,6 @@ module IndexHelper
     records = records.page(params[:page]).per(5) unless options[:pagination] == false
     
     builder = IndexBuilder.new(self, model, records, options, &block)
-    render partial: 'helpers/index', locals: { builder: builder, options: options }
+    render partial: 'index_helper/index', locals: { builder: builder, options: options }
   end
 end
