@@ -59,7 +59,7 @@ module IndexHelper
       records = records.order("#{sort} #{order}")
     end
     
-    records = records.page(params[:page]).per(5) unless options[:pagination] == false
+    records = records.page(params[:page]) unless options[:pagination] == false
     
     builder = IndexBuilder.new(self, model, records, options, &block)
     render partial: 'index_helper/index', locals: { builder: builder, options: options }
