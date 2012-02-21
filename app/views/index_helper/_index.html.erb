@@ -39,7 +39,7 @@
   </div>
   <div class="index-navigation-bottom">
     <div class="index-buttons">
-      <%= link_to "New #{builder.model.last.model_name.singular}", [:new] + builder.model.first(builder.model.length - 1) << builder.model.last.new %>
+      <%= link_to "New #{builder.model.last.model_name.singular}", builder.model.first(builder.model.length - 1) << builder.model.last.new %>
     </div>
     <% unless options[:pagination] == false %>
       <div class="index-pager">
