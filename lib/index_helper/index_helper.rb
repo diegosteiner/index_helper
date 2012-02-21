@@ -4,7 +4,8 @@ module IndexHelper
     
     def initialize template, model, records, options={}, &block
       @template = template
-      @model = model
+      @model = [model] unless model.is_a? Array
+      @model ||= model 
       @records = records
       @columns = [] # TODO initialize from Array?
       @options = options
@@ -17,13 +18,8 @@ module IndexHelper
     end
     
     def title
-      @options[:title] || model.model_name.human
+      @options[:title] || model.last.model_name.human
     end
-    
-    def model_path(*args)
-      send("#{model.model_name}_path", args)
-    end
-    
   end
   
   class IndexColumn
@@ -35,7 +31,7 @@ module IndexHelper
       @value_block = block if block_given?
       @name = name
       @title = title
-      @title ||= @model.try(:human_attribute_name, name)
+      @title ||= @model.last.try(:human_attribute_name, name)
       @title ||= name
     end
       

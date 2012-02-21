@@ -12,7 +12,7 @@
             <% unless options[:pagination] == false %>
               <% ascending = (c.name == sort_column && params[:order] == 'asc')  %>
               <th class="<%= "sorting_column #{ascending ? :desc : :asc}" if c.name == sort_column %>">
-                  <%=  link_to(send("#{builder.model.model_name.plural}_path", {sort: c.name, order: ( ascending ? :desc : :asc )})) do %>
+                  <%=  link_to('', {sort: c.name, order: ( ascending ? :desc : :asc )})) do %>
                 <%= content_tag :span, c.head %>
                 <% end %>
               </th>
@@ -39,7 +39,7 @@
   </div>
   <div class="index-navigation-bottom">
     <div class="index-buttons">
-      <%= link_to 'New Member', send("new_#{builder.model.model_name.singular}_path") %>
+      <%= link_to [:new].merge(builder.model), "New #{builder.model.model_name.singular}") %>
     </div>
     <% unless options[:pagination] == false %>
       <div class="index-pager">
