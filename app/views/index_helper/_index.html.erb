@@ -12,7 +12,7 @@
             <% unless options[:pagination] == false %>
               <% ascending = (c.name == sort_column && params[:order] == 'asc')  %>
               <th class="<%= "sorting_column #{ascending ? :desc : :asc}" if c.name == sort_column %>">
-                  <%=  link_to('', {sort: c.name, order: ( ascending ? :desc : :asc )})) do %>
+                  <%=  link_to({sort: c.name, order: ( ascending ? :desc : :asc )}) do %>
                 <%= content_tag :span, c.head %>
                 <% end %>
               </th>
