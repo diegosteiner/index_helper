@@ -30,7 +30,7 @@
         <% builder.records.each do |r| %>
           <tr>
             <% builder.columns.each do |c| %>
-              <td><%= c.body r %></td>
+              <td><%= c.body(r || "-") %></td>
             <% end %>
           </tr>
         <% end %>
