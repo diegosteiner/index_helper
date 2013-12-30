@@ -28,10 +28,10 @@
       <file leaf-file-name="_index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/index_helper/_index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="24" selection-start="1355" selection-end="1355" vertical-scroll-proportion="0.76813656" vertical-offset="90" max-vertical-offset="870">
+            <state line="42" column="27" selection-start="1358" selection-end="1358" vertical-scroll-proportion="0.658606" vertical-offset="167" max-vertical-offset="870">
               <folding>
-                <marker date="1388445659242" expanded="true" signature="1284:1384" placeholder="..." />
-                <marker date="1388445659242" expanded="true" signature="1393:1538" placeholder="unless ... end" />
+                <marker date="1388446567334" expanded="true" signature="1284:1387" placeholder="..." />
+                <marker date="1388446567334" expanded="true" signature="1396:1541" placeholder="unless ... end" />
               </folding>
             </state>
           </provider>
@@ -259,10 +259,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/index_helper/_index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="24" selection-start="1355" selection-end="1355" vertical-scroll-proportion="0.76813656" vertical-offset="90" max-vertical-offset="870">
+        <state line="42" column="27" selection-start="1358" selection-end="1358" vertical-scroll-proportion="0.658606" vertical-offset="167" max-vertical-offset="870">
           <folding>
-            <marker date="1388445659242" expanded="true" signature="1284:1384" placeholder="..." />
-            <marker date="1388445659242" expanded="true" signature="1393:1538" placeholder="unless ... end" />
+            <marker date="1388446567334" expanded="true" signature="1284:1387" placeholder="..." />
+            <marker date="1388446567334" expanded="true" signature="1396:1541" placeholder="unless ... end" />
           </folding>
         </state>
       </provider>
