@@ -1,6 +1,6 @@
 module IndexHelper
   class IndexBuilder
-    attr_reader :columns, :records, :model
+    attr_reader :columns, :records, :model, :buttons
     
     def initialize template, model, records, options={}, &block
       @template = template
@@ -9,12 +9,17 @@ module IndexHelper
       @records = records
       @columns = [] # TODO initialize from Array?
       @options = options
+      @buttons = []
       
       yield(self) if block_given?
     end
     
     def column name, title=nil, &block
       @columns << IndexColumn.new(@template, @model, name, &block)
+    end
+
+    def button &block
+      @buttons << &block
     end
     
     def title
