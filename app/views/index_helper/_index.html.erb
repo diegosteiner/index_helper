@@ -40,7 +40,7 @@
   <div class="index-navigation-bottom">
     <div class="index-buttons">
       <% builder.buttons.each do |button| %>
-        <%= button %>
+        <%= button.yield %>
       <% end %>
     </div>
     <% unless options[:pagination] == false %>
