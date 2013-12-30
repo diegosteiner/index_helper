@@ -19,7 +19,7 @@ module IndexHelper
     end
 
     def button &block
-      @buttons << &block
+      @buttons << block
     end
     
     def title
