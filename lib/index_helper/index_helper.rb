@@ -14,12 +14,12 @@ module IndexHelper
       yield(self) if block_given?
     end
     
-    def column name, title=nil, &block
+    def column name=nil, title=nil, &block
       @columns << IndexColumn.new(@template, @model, name, &block)
     end
 
     def button &block
-      @buttons << block
+      @buttons << (@template.with_output_buffer{ block.yield } )
     end
     
     def title
@@ -30,13 +30,13 @@ module IndexHelper
   class IndexColumn
     attr_reader :name, :title
     
-    def initialize template, model, name, title=nil, &block
+    def initialize template, model, name=nil, title=nil, &block
       @model = model
       @template = template
       @value_block = block if block_given?
       @name = name
       @title = title
-      @title ||= @model.last.try(:human_attribute_name, name)
+      @title ||= model.last.try(:human_attribute_name, name) if name
       @title ||= name
     end
       
@@ -45,10 +45,9 @@ module IndexHelper
     end
       
     def body record
-      if @value_block
-        value = (@template.with_output_buffer{ @value_block.yield (record)} )
-      end
-      value ||= record.try(@name)
+      value = (@template.with_output_buffer{ @value_block.yield (record)} ) if @value_block.present?
+      value ||= record.try(@name) if @name.present? && record.respond_to?(@name)
+      value ||= ""
       value.to_s
     end
   end

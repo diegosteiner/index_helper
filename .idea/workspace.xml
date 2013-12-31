@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4bf84a79-8d17-49dc-86fd-58a190ac6c30" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/index_helper/_index.html.erb" afterPath="$PROJECT_DIR$/app/views/index_helper/_index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/index_helper/index_helper.rb" afterPath="$PROJECT_DIR$/lib/index_helper/index_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="index_helper.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,22 +27,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_index.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/index_helper/_index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="27" selection-start="1358" selection-end="1358" vertical-scroll-proportion="0.658606" vertical-offset="167" max-vertical-offset="870">
+            <state line="42" column="18" selection-start="1349" selection-end="1349" vertical-scroll-proportion="-26.25" vertical-offset="0" max-vertical-offset="870">
               <folding>
-                <marker date="1388446567334" expanded="true" signature="1284:1387" placeholder="..." />
-                <marker date="1388446567334" expanded="true" signature="1396:1541" placeholder="unless ... end" />
+                <marker date="1388450304146" expanded="true" signature="291:932" placeholder="do ... end" />
+                <marker date="1388450304146" expanded="true" signature="316:912" placeholder="unless ... end" />
+                <marker date="1388450304146" expanded="true" signature="628:705" placeholder="do ... end" />
+                <marker date="1388450304146" expanded="true" signature="809:870" placeholder="do ... end" />
+                <marker date="1388450304146" expanded="true" signature="1011:1173" placeholder="do ... end" />
+                <marker date="1388450304146" expanded="true" signature="1072:1139" placeholder="do ... end" />
+                <marker date="1388450304146" expanded="true" signature="1284:1378" placeholder="..." />
+                <marker date="1388450304146" expanded="true" signature="1387:1532" placeholder="unless ... end" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index_helper.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index_helper.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/index_helper/index_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="18" selection-start="590" selection-end="590" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1110">
+            <state line="47" column="100" selection-start="1256" selection-end="1256" vertical-scroll-proportion="0.46354884" vertical-offset="368" max-vertical-offset="1095">
               <folding />
             </state>
           </provider>
@@ -54,8 +62,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/lib/index_helper/index_helper.rb" />
         <option value="$PROJECT_DIR$/app/views/index_helper/_index.html.erb" />
+        <option value="$PROJECT_DIR$/lib/index_helper/index_helper.rb" />
       </list>
     </option>
   </component>
@@ -250,20 +258,26 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/index_helper/index_helper.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/index_helper/_index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="18" selection-start="590" selection-end="590" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1110">
-          <folding />
+        <state line="42" column="18" selection-start="1349" selection-end="1349" vertical-scroll-proportion="-26.25" vertical-offset="0" max-vertical-offset="870">
+          <folding>
+            <marker date="1388450304146" expanded="true" signature="291:932" placeholder="do ... end" />
+            <marker date="1388450304146" expanded="true" signature="316:912" placeholder="unless ... end" />
+            <marker date="1388450304146" expanded="true" signature="628:705" placeholder="do ... end" />
+            <marker date="1388450304146" expanded="true" signature="809:870" placeholder="do ... end" />
+            <marker date="1388450304146" expanded="true" signature="1011:1173" placeholder="do ... end" />
+            <marker date="1388450304146" expanded="true" signature="1072:1139" placeholder="do ... end" />
+            <marker date="1388450304146" expanded="true" signature="1284:1378" placeholder="..." />
+            <marker date="1388450304146" expanded="true" signature="1387:1532" placeholder="unless ... end" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/index_helper/_index.html.erb">
+    <entry file="file://$PROJECT_DIR$/lib/index_helper/index_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="27" selection-start="1358" selection-end="1358" vertical-scroll-proportion="0.658606" vertical-offset="167" max-vertical-offset="870">
-          <folding>
-            <marker date="1388446567334" expanded="true" signature="1284:1387" placeholder="..." />
-            <marker date="1388446567334" expanded="true" signature="1396:1541" placeholder="unless ... end" />
-          </folding>
+        <state line="47" column="100" selection-start="1256" selection-end="1256" vertical-scroll-proportion="0.46354884" vertical-offset="368" max-vertical-offset="1095">
+          <folding />
         </state>
       </provider>
     </entry>
